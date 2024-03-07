@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Weather -->
+<div class="container mt-5">
+
+    <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+        <input id="txtCityName" type="text" class="form-control" placeholder="Enter Your City Name" autocomplete="off" /> &nbsp;&nbsp;&nbsp;
+        <button id="btn_Search" type="button" class="btn btn-primary">Search</button>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center align-items-center">
+        <div id="div_weather" style="display:none;" class="weather__card">
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <div class="p-3">
+                    <h2 id="temperature"></h2>
+                </div>
+                <div id="iconContainer" class="p-3">
+                </div>
+                <div class="p-3">
+                    <h5 id="h5_datetime"></h5>
+                    <h3 id="city"></h3>
+                    <span id="weatherDescription" class="weather__description"></span>
+                </div>
+            </div>
+            <div class="weather__status d-flex flex-row justify-content-center align-items-center mt-3">
+                <div class="p-4 d-flex justify-content-center align-items-center">
+                    <img src="https://svgur.com/i/oHw.svg">
+                    <span id="humidity"></span>
+                </div>
+                <div class="p-4 d-flex justify-content-center align-items-center">
+                    <img src="https://svgur.com/i/oH_.svg">
+                    <span id="temperature_feranhit"></span>
+                </div>
+                <div class="p-4 d-flex justify-content-center align-items-center">
+                    <img src="https://svgur.com/i/oKS.svg">
+                    <span id="windSpeed"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="spinner-div" class="pt-5">
+    <div class="spinner-border text-primary" role="status">
+    </div>
+</div>
